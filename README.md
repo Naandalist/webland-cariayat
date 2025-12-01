@@ -1,6 +1,6 @@
-# Info Haji
+# Cari Ayat
 
-Landing page untuk aplikasi Info Haji - Aplikasi untuk cek nomor porsi haji dan informasi keberangkatan.
+Landing page untuk aplikasi **Cari Ayat** — aplikasi untuk menemukan ayat Al-Qur’an dari lafaz latin atau kata kunci terjemahan bahasa Indonesia, dengan toleransi typo (fuzzy search).
 
 ## Setup
 
@@ -19,6 +19,3 @@ pnpm build
 
 Astro, React, Tailwind CSS
 
----
-
-[Download di Google Play](https://play.google.com/store/apps/details?id=com.naandalist.info_haji)
