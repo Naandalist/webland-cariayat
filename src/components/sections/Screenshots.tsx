@@ -5,7 +5,7 @@ import { areImagesEqual } from "config";
 import DeviceToggle from "@components/ui/DeviceToggle";
 
 const Screenshots = ({ images }: ScreenshotsProps) => {
-	const [activeDevice, setActiveDevice] = useState<"android" | "desktop">("android");
+	const [activeDevice, setActiveDevice] = useState<"android" | "tablet">("android");
 	const currentImages = images[activeDevice];
 
 	return (
@@ -51,7 +51,7 @@ const Screenshots = ({ images }: ScreenshotsProps) => {
 									src={image}
 									alt={`Screenshot ${index + 1}`}
 									className={`rounded-xl border border-gray-200 object-cover ${
-										activeDevice === "desktop"
+										activeDevice === "tablet"
 											? "aspect-[16/9] w-[460px]"
 											: "aspect-[9/16] w-[260px]"
 									}`}

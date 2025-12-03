@@ -4,7 +4,7 @@ import type { DeviceToggleProps } from "config";
 
 const DeviceToggle = ({ activeDevice, onToggle }: DeviceToggleProps) => {
 	const handleAndroidToggle = useCallback(() => onToggle("android"), [onToggle]);
-	const handleDesktopToggle = useCallback(() => onToggle("desktop"), [onToggle]);
+	const handleTabletToggle = useCallback(() => onToggle("tablet"), [onToggle]);
 
 	return (
 		<div className="flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 p-1">
@@ -14,9 +14,9 @@ const DeviceToggle = ({ activeDevice, onToggle }: DeviceToggleProps) => {
 				label="Android"
 			/>
 			<DeviceButton
-				isActive={activeDevice === "desktop"}
-				onClick={handleDesktopToggle}
-				label="Desktop"
+				isActive={activeDevice === "tablet"}
+				onClick={handleTabletToggle}
+				label="Tablet"
 			/>
 		</div>
 	);

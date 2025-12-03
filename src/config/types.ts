@@ -2,7 +2,7 @@ import type { IconType } from "react-icons";
 
 export interface DeviceScreenshots {
 	android: string[];
-	desktop: string[];
+	tablet: string[];
 }
 
 export interface Feature {
@@ -81,8 +81,8 @@ export interface BreadcrumbsProps {
 }
 
 export interface DeviceToggleProps {
-	activeDevice: "android" | "desktop";
-	onToggle: (device: "android" | "desktop") => void;
+	activeDevice: "android" | "tablet";
+	onToggle: (device: "android" | "tablet") => void;
 }
 
 export interface GithubCornerProps {
@@ -103,6 +103,6 @@ export function areImagesEqual<T extends WithImages>(
 ): boolean {
 	return (
 		prevProps.images.android === nextProps.images.android &&
-		prevProps.images.desktop === nextProps.images.desktop
+		prevProps.images.tablet === nextProps.images.tablet
 	);
 }
